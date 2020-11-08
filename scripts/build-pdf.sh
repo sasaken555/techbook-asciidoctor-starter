@@ -7,7 +7,7 @@ ASCIIDOCTOR_PDF_DIR=`bundle info asciidoctor-pdf --path`
 echo ">> Converting AsciiDoc to PDF..."
 
 # Use default theme and fonts w/ Japanese fallback.
-asciidoctor-pdf -B ${CURRENT_PATH}/ \
+asciidoctor-pdf -B ${CURRENT_PATH}/docs \
   -r asciidoctor-pdf-cjk \
   -a scripts=cjk \
   -a pdf-style=default-with-fallback-font-theme.yml \
