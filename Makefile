@@ -5,7 +5,7 @@ setup: ## 依存ライブラリをインストールする。
 		@bundle install
 		@echo ">> Installed all dependencies"
 
-clean: ## 作成したHTML/PDFを削除する。ファイル生成前にも実行される。
+clean: ## 生成したHTML/PDFを全て削除する。ファイル生成前にも実行される。
 		@rm -f docs/*.pdf
 		@rm -f docs/*.html
 		@echo ">> Cleanup all PDF."
