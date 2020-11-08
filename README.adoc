@@ -48,9 +48,11 @@ $ make setup
 >> Installed all dependencies
 ----
 
+PDFファイルを生成しましょう。
+
 [source,bash]
 ----
-$ make docs
+$ make pdf
 >> Cleanup all PDF.
 >> Convert succeeded!
 >> Converted files are following.
