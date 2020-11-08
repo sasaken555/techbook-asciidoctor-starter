@@ -1,0 +1,70 @@
+= techbook-asciidoctor-pdf
+
+== About
+
+AsciiDoc/asciidoctor-pdfで技術文章を作成するための雛形リポジトリです。
+
+英語と日本語で記述されたHTML/PDFファイルを作成できます。
+
+
+== Prerequisite
+
+ファイル生成のために、以下のソフトウェアを使用します。 +
+事前にダウンロードし、コマンドを実行できることを確認してください。
+
+* https://www.gnu.org/software/make/[GNU Make]
+* https://www.ruby-lang.org/ja/[Ruby]
+* https://bundler.io/[Bundler]
+
+
+[source,bash]
+----
+$ make -version
+GNU Make 3.81
+
+$ ruby -v
+ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-darwin19]
+
+$ bundler -v
+Bundler version 2.1.4
+----
+
+
+== Usage
+
+`docs` ディレクトリにHTML/PDFを生成するAsciiDoc文章を配置します。
+
+[source,bash]
+----
+$ ls docs/
+sample.adoc
+----
+
+ファイル生成に必要なライブラリを事前にインストールします。
+
+[source,bash]
+----
+$ make setup
+>> Installed all dependencies
+----
+
+[source,bash]
+----
+$ make docs
+>> Cleanup all PDF.
+>> Convert succeeded!
+>> Converted files are following.
+docs/sample.pdf
+----
+
+
+== その他のコマンド
+
+[source,bash]
+----
+$ make help
+setup           依存ライブラリをインストールする。
+clean           生成したHTML/PDFを全て削除する。ファイル生成前にも実行される。
+pdf             PDFを生成する。
+html            HTMLを生成する。
+----
