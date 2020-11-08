@@ -1,11 +1,23 @@
-:toc:
+// Document format
+:lang: ja
+:doctype: book
+:icons: font
 :source-highlighter: rouge
 
-= サンプル
+// Table of contents
+:toc:
+:toclevels: 2
+:toc-title: 目次
 
-== 段落1
+// Document meta
+:docname: サンプル文章
 
-=== 章タイトル1-1
+
+= サンプル文章
+
+== 1. タイトルA
+
+=== 節タイトル1-1
 
 サンプル。
 サンプルサンプル。
@@ -16,7 +28,7 @@
 
 サンプルサンプルサンプル。
 
-=== 章タイトル1-2
+=== 節タイトル1-2
 
 * リスト
 * リスト
@@ -26,10 +38,14 @@
 
 NOTE: This is 補足情報。
 
+TIP: 素敵なTipsをここに置こう。
 
-== 段落2
+WARNING: 危険が危ない！
 
-=== 章タイトル2-1
+
+== 1. タイトルB
+
+=== 節タイトル2-1
 
 ソースコードのシンタックスハイライトの例です。
 
