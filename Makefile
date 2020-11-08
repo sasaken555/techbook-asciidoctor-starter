@@ -16,5 +16,5 @@ pdf: clean ## PDFを生成する。
 html: clean ## HTMLを生成する。
 		@./scripts/build-html.sh
 
-help:
+help: ## ヘルプを出力する。
 		@grep -E '^[/a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | perl -pe 's%^([/a-zA-Z_-]+):.*?(##)%$$1 $$2%' | awk -F " *?## *?" '{printf "\033[36m%-15s\033[0m %-50s %s\n", $$1, $$2, $$3}'
