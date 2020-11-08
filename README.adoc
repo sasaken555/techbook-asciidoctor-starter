@@ -1,10 +1,10 @@
-= techbook-asciidoctor-pdf
+= techbook-asciidoctor-starter
 
 == About
 
 AsciiDoc/asciidoctor-pdfで技術文章を作成するための雛形リポジトリです。
 
-英語と日本語で記述されたHTML/PDFファイルを作成できます。
+英語と日本語で記述されたAsciiDoc文章からHTML/PDFファイルを作成できます。
 
 
 == Prerequisite
@@ -58,7 +58,7 @@ docs/sample.pdf
 ----
 
 
-== その他のコマンド
+== コマンド一覧
 
 [source,bash]
 ----
