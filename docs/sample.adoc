@@ -50,7 +50,7 @@ WARNING: 危険が危ない！
 ソースコードのシンタックスハイライトの例です。
 
 .sample.js
-[source, js]
+[source, js, linenums]
 ----
 const hoge = 1;
 const fuga = 222;
