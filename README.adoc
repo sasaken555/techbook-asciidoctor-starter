@@ -16,6 +16,7 @@ AsciiDoc/asciidoctor-pdfで技術文章を作成するための雛形リポジ�
 * https://www.ruby-lang.org/ja/[Ruby]
 * https://bundler.io/[Bundler]
 
+このリポジトリでは以下のバージョンで動作確認を行っています。
 
 [source,bash]
 ----
@@ -62,6 +63,9 @@ docs/sample.pdf
 
 == コマンド一覧
 
+全てのワークフローは `make` コマンド経由で実行します。 +
+実行可能なコマンドの一覧は `make help` で参照可能です。
+
 [source,bash]
 ----
 $ make help
@@ -69,4 +73,5 @@ setup           依存ライブラリをインストールする。
 clean           生成したHTML/PDFを全て削除する。ファイル生成前にも実行される。
 pdf             PDFを生成する。
 html            HTMLを生成する。
+help            ヘルプを出力する。
 ----
